@@ -26,39 +26,24 @@ from helpers.link_info import linfo2
 logger = logging.getLogger(__name__)
 
 HELP_TXT = """
-A Simple Telegram Bot to 
-Upload Files From **Direct** and **Google Drive** and **Youtube** Links,
-Convert Document Media to Video,
-and Rename Audio/Video/Document Files.
+🎭Welcome Dear.... I am Multi Usage BOT [Powered By @Dasuwaprofa✨] 
 
-/upload : reply to your url .
-    
-    `http://aaa.bbb.ccc/ddd.eee` | **fff.ggg**
-    or
-    `http://aaa.bbb.ccc/ddd.eee`
+♻️My BOT Supporting...🔰
 
-/c2v : reply to your document to convert it into streamable video.
-    
-/rnv : reply to your video. Example:
-    
-    `/rnv | videoname`
-    
-/rna : reply to your audio. \"`-`\" : leave without change.
+🔶4Gb files Direct Upload (Premium Users Only❤️)
+🔶Multi Tasking Features (At One Time🔂)
+🔶ANy Video Download,Upload,Stream,Encode,Compress...ETC🚀
+🔶ANy Audio Download,Upload,Convert,Merged...ETC🚀
+🔶No Time Gaps,No Flood Waiting,No Restrictions🔥
 
-    `/rna | audioname | title | artists`
-    `/rna | audioname`
-    `/rna | - | title`
-    `/rna | - | - | artists`
-    
-/rnf : reply to your document. Example:
-
-    `/rnf | filename.ext`
+🔔IMPORTANT NOTICE🔔
+🟥Your must Pay 5$ Monthly to Use This Bot Because I stopped my free Service🐕‍🦺
 """
 
 @Client.on_message(filters.command(["start"]))
 async def start(client , m):
     """Send a message when the command /start is issued."""
-    await m.reply_text(text=f"Hi\n\nSee /help for More Info!")
+    await m.reply_text(text=f"Hi Dear✨ I am Multi Usage BOT🗃️\n\n♻️See /help for ℹ️More Information...Powered By @Dasuking🔥")
 
     
 @Client.on_message(filters.command(["help"]))
@@ -74,7 +59,7 @@ async def rnv1(client , u):
     elif not Config.AUTH_USERS:
         await rnv2(client , u)
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"Hey Ponsi🤬 You cant use Me...ℹ️Because You Are Not Paid User⛔\n\n🤖To Use Me:\n[♻️PAY_HERE♻️](https://t.me/Dasuwaprofa)", quote=True, disable_web_page_preview=True)
         return
     
 @Client.on_message(filters.private & filters.command(["rna"]))
@@ -85,7 +70,7 @@ async def rna1(client , u):
     elif not Config.AUTH_USERS:
         await rna2(client , u)
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"Hey Ponsi🤬 You cant use Me...ℹ️Because You Are Not Paid User⛔\n\n🤖To Use Me:\n[♻️PAY_HERE♻️](https://t.me/Dasuwaprofa)", quote=True, disable_web_page_preview=True)
         return
 
 @Client.on_message(filters.private & filters.command(["rnf"]))
@@ -96,7 +81,7 @@ async def rnf1(client , u):
     elif not Config.AUTH_USERS:
         await rnf2(client , u)
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"Hey Ponsi🤬 You cant use Me...ℹ️Because You Are Not Paid User⛔\n\n🤖To Use Me:\n[♻️PAY_HERE♻️](https://t.me/Dasuwaprofa)", quote=True, disable_web_page_preview=True)
         return
    
 @Client.on_message(filters.private & filters.command(["c2v"]))
@@ -107,7 +92,7 @@ async def to_video1(client , u):
     elif not Config.AUTH_USERS:
         await to_video2(client , u) 
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"Hey Ponsi🤬 You cant use Me...ℹ️Because You Are Not Paid User⛔\n\n🤖To Use Me:\n[♻️PAY_HERE♻️](https://t.me/Dasuwaprofa)", quote=True, disable_web_page_preview=True)
         return
     
 @Client.on_message(filters.private & (filters.audio | filters.document | filters.video))
@@ -127,5 +112,5 @@ async def leecher1(client , u):
     elif not Config.AUTH_USERS:
         await leecher2(client , u)
     else:
-        await u.reply_text(text=f"sorry ! you cant use this bot.\n\ndeploy your own bot:\n[Repository_Link](https://github.com/prxpostern/URLtoTG001)", quote=True, disable_web_page_preview=True)
+        await u.reply_text(text=f"Hey Ponsi🤬 You cant use Me...ℹ️Because You Are Not Paid User⛔\n\n🤖To Use Me:\n[♻️PAY_HERE♻️](https://t.me/Dasuwaprofa)", quote=True, disable_web_page_preview=True)
         return
