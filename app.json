@@ -3,7 +3,7 @@
     "description": "Simple Video Uploader",
     "repository": "https://github.com/Dasuwa/UrlUploadBOT",
     "success_url": "https://t.me/Dasuwaprofa",
-    "stack": "heroku-22",
+    "stack": "heroku-20",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token, as a string.",
