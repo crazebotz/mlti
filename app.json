@@ -3,11 +3,11 @@
     "description": "Simple Video Uploader",
     "repository": "https://github.com/Dasuwa/UrlUploadBOT",
     "success_url": "https://t.me/Dasuwaprofa",
-    "stack": "heroku-20",
+    "stack": "heroku-22",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token, as a string.",
-            "value": ""
+            "value": "5892164545:AAGRMVbhPcdMsvHoQay6rxx-ZcvdxOZYoNk"
         },
         "API_ID": {
             "description": "Get this value from https://my.telegram.org",
@@ -19,7 +19,7 @@
         },
         "AUTH_USERS": {
             "description": "only these user id's can use the bot. separate with space",
-            "value": "",
+            "value": "6166241396",
             "required": false
         }
     },
