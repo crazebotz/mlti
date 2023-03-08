@@ -1,8 +1,8 @@
 {
     "name": "Simple Video Uploader",
     "description": "Simple Video Uploader",
-    "repository": "https://github.com/prxpostern/prxvideoleecher002",
-    "success_url": "https://t.me/ali110ali",
+    "repository": "https://github.com/Dasuwa/UrlUploadBOT",
+    "success_url": "https://t.me/Dasuwaprofa",
     "stack": "heroku-20",
     "env": {
         "BOT_TOKEN": {
@@ -23,18 +23,7 @@
             "required": false
         }
     },
-    "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "https://github.com/prxpostern/heroku-buildpack-ffmpeg-latest.git"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+  "buildpacks": [{
+    "url": "heroku/python"
+  }]
 }
